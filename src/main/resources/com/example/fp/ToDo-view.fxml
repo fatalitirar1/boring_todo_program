@@ -8,17 +8,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="673.0" prefWidth="541.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.fp.HelloController">
+<VBox prefHeight="673.0" prefWidth="541.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fp.ToDo_controller">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
       <AnchorPane prefHeight="510.0" prefWidth="502.0">
          <children>
-            <TableView fx:id="todotable" prefHeight="507.0" prefWidth="510.0">
+            <TableView fx:id="todotable" onKeyPressed="#TableOnButtonClick" prefHeight="507.0" prefWidth="510.0">
               <columns>
                 <TableColumn fx:id="todoName" prefWidth="448.0" text="todo" />
-                <TableColumn fx:id="todoCheck" minWidth="0.0" prefWidth="61.0" text="check" />
+                <TableColumn fx:id="todoCheck" minWidth="0.0" onEditStart="#EditCondition" prefWidth="61.0" text="check" />
               </columns>
             </TableView>
          </children>

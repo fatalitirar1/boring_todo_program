@@ -3,16 +3,14 @@ package com.example.fp;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-
-public class HelloController  {
+import javafx.scene.input.KeyEvent;
+public class ToDo_controller {
 
     ObservableList<Task> tasks = FXCollections.observableArrayList();
 
@@ -44,9 +42,9 @@ public class HelloController  {
         String Line = Text_WhatToDo.getText();
         if (!Line.isEmpty()) {
             todoName.setCellValueFactory(new PropertyValueFactory<Task, Label>("name"));
-            todoCheck.setCellValueFactory(new PropertyValueFactory<Task, CheckBox>("condition"));
+            todoCheck.setCellValueFactory(new PropertyValueFactory<Task, CheckBox>("state"));
 
-            Task task_ = new Task(Text_WhatToDo.getText());
+            Task task_ = new Task(Line);
             tasks.add(task_);
 
             todotable.setItems(tasks);
@@ -57,6 +55,20 @@ public class HelloController  {
     @FXML
     void initialize() {
 
+
+    }
+
+    @FXML
+    void TableOnButtonClick(KeyEvent event) {
+        if (event.getCode().name().equals("DELETE"))
+        {
+            tasks.remove(todotable.getSelectionModel().getSelectedItem());
+            todotable.setItems(tasks);
+        }
+
+    }
+    @FXML
+    void EditCondition(ActionEvent event) {
 
     }
 

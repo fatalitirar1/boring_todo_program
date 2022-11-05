@@ -4,10 +4,13 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 
-public class Task {
+import java.util.stream.Stream;
+
+
+public class Task implements Task_Make {
 
     public Label name = new Label();
-    public CheckBox condition = new CheckBox();
+    public CheckBox state = new CheckBox();
     public Label getName()
     {
         return name;
@@ -15,11 +18,22 @@ public class Task {
 
     public CheckBox getCondition()
     {
-        return condition;
+        return state;
     }
 
     public Task(String name)
     {
         this.name.setText(name);
+    }
+
+    @Override
+    public void setNewName(String newName) {
+        this.name.setText(newName);
+    }
+
+    @Override
+    public void setNewCondition(Boolean state) {
+        this.state.setSelected(state);
+
     }
 }
