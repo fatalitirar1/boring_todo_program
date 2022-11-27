@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0630ad1-d94a-4922-97a9-6a2964928857" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/tsak_mngr.java" afterDir="false" />
+    <list default="true" id="b0630ad1-d94a-4922-97a9-6a2964928857" name="Changes" comment="rename + fix classes">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/DB_Use.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/DB_module.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fp/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/ToDoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fp/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/ToDo_controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fp/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fp/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/fp/ToDo-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fp/Task_Make.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/Task_Make.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fp/ToDoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/ToDoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fp/ToDo_controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fp/ToDo_controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fp/tsak_mngr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/fp/ToDo-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/fp/ToDo-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +28,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/target/classes/com/example/fp/ToDo_controller.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,7 +53,19 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/FreeRef/postgresql-42.5.0.jar",
+    "list.type.of.created.stylesheet": "CSS",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -67,8 +90,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666897958328</updated>
+      <workItem from="1667995026619" duration="27541000" />
+      <workItem from="1668258644999" duration="15218000" />
+      <workItem from="1668492765018" duration="26000" />
+      <workItem from="1668766157453" duration="3000" />
+      <workItem from="1669301881577" duration="1310000" />
+      <workItem from="1669582210568" duration="5311000" />
     </task>
+    <task id="LOCAL-00001" summary="rename + fix classes">
+      <created>1667660319727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667660319727</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -80,6 +120,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rename + fix classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename + fix classes" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

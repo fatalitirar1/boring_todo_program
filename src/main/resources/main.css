@@ -1,0 +1,18 @@
+#VboxBody {
+    -fx-background-color: #3e6e84;
+}
+
+.AddButton {
+    -fx-background-color: #52843e;
+    -fx-text-fill: white;
+}
+
+#todo_column {
+    /* -fx-background-color: #3e6e84;*/
+    -fx-text-fill: white;
+}
+
+#todoCheck_column {
+    /*-fx-background-color: #52843e;*/
+    -fx-alignment: center;
+}
